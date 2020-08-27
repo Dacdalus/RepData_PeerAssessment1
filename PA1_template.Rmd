@@ -130,13 +130,3 @@ ggplot(series2 , aes(x = interval , y = x, color = weekend)) +
   facet_wrap(~weekend , ncol = 1, nrow = 2)
 ```
 
-
-
-
-
-
-
-
-
-
-

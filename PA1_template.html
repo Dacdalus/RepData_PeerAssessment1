@@ -465,7 +465,7 @@ head(activity2)</code></pre>
 ## 4:    37 2012-10-01       15 lunes weekday
 ## 5:    37 2012-10-01       20 lunes weekday
 ## 6:    37 2012-10-01       25 lunes weekday</code></pre>
-<p>2- plot containing a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days</p>
+<p>2- Plot containing a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days</p>
 <pre class="r"><code>series2 &lt;- aggregate(activity2$steps, by = list(interval  = activity2$interval, weekend = activity2$weekend), FUN =  mean)
 
 ggplot(series2 , aes(x = interval , y = x, color = weekend)) + 
